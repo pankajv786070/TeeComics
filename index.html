@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main Content</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    .hidden {
+      display: none;
+    }
+    a {
+      display: inline-block;
+      margin: 15px;
+      padding: 10px 20px;
+      text-decoration: none;
+      color: white;
+      background-color: #4CAF50;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+    a:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    // Check payment status on page load
+    window.onload = function () {
+      const paymentStatus = localStorage.getItem("paymentCompleted");
+
+      if (paymentStatus) {
+        // If payment is completed, show the buttons
+        document.getElementById("buttons").classList.remove("hidden");
+      } else {
+        // If payment is not completed, redirect to payment page
+        alert("You must complete the payment to access this content!");
+        window.location.href = "payment.html"; // Replace with your local file path
+      }
+    };
+  </script>
+</head>
+<body>
+  <h1>Welcome to the Main Content</h1>
+  <p>This content is accessible only after payment.</p>
+
+  <!-- Buttons for E-Book and Audio Book (Hidden by default) -->
+  <div id="buttons" class="hidden">
+    <a href="ebook.html">Go to E-Book</a>
+    <a href="audiobook.html">Go to Audio Book</a>
+  </div>
+</body>
+</html>
