@@ -1,1 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Payment Page</title>
+  <script>
+    const paymentLink = "https://imjo.in/Pm9VyU"; // Replace with your payment link
 
+    function makePayment() {
+      // Redirect to payment link
+      window.location.href = paymentLink;
+    }
+  </script>
+</head>
+<body>
+  <h1>Payment Required</h1>
+  <p>Please complete the payment to access the content.</p>
+  <button onclick="makePayment()">Pay Now</button>
+</body>
+</html>
