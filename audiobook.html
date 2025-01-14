@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio book </title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            height: 100vh; /* Full screen height */
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+            height: 100%; /* Full height */
+            position: fixed; /* Fixes the sidebar to the left side */
+        }
+        .sidebar .back-button {
+            display: inline-block;
+            margin-bottom: 20px;
+            padding: 10px 15px;
+            font-size: 18px;
+            background-color: #007BFF;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .sidebar .back-button:hover {
+            background-color: #0056b3;
+        }
+        .sidebar a {
+            display: block;
+            margin: 15px 0;
+            text-decoration: none;
+            color: #007BFF;
+            font-size: 18px;
+        }
+        .sidebar a:hover {
+            color: #0056b3;
+        }
+        .content {
+            margin-left: 270px; /* Leaves space for the sidebar */
+            padding: 20px;
+            flex: 1;
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sidebar with Back Button and Links -->
+    <div class="sidebar">
+        <!-- Back Button -->
+        <a href="index.html" class="back-button">&#8592; Back to Main Page</a>
+
+        <h2>Top  Aideo Books in English </h2>
+        
+        <a href="https://librivox.org/" target="_blank">LibriVox - Free Audiobooks</a>
+        <a href="https://www.audible.com/" target="_blank">Audible - Premium Audiobooks</a>
+        <a href="https://www.storynory.com/" target="_blank">Storynory - Free Audio Stories for Kids</a>
+        <a href="https://openlibrary.org/subjects/audiobooks" target="_blank">Open Library - Audiobooks</a>
+    </div>
+
+    <!-- Main Content Area -->
+    <div class="content">
+        <h1>Welcome to the Library</h1>
+        <p>Here you can explore a variety of ebook and audiobook resources. Select an option from the sidebar.</p>
+    </div>
+
+</body>
+</html>
